@@ -1,0 +1,36 @@
+body {
+    background-color: #272727;
+    font-family: 'Test SD Gyeokdonggulim';
+}
+
+/* 세로 */
+
+@media screen and (orientation: portrait) {
+    .main {
+        display: none;
+    }
+
+    .portrait {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../image/main/main_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.spin-message {
+    text-align: center;
+}
+
+.img-spin {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .img-spin {
+        width: 70%;
+    }
+}

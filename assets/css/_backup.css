@@ -1,0 +1,392 @@
+body {
+    background-color: #000000;
+    font-family: 'Test SD Gyeokdonggulim';
+}
+
+.dodo-main {
+    background-image: url("../image/main/main_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dodo-alphabet-main {
+    background-image: url('../image/main_alphabet/page_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.img-main-logo {
+    width: 212px;
+    height: 65px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .img-main-logo {
+        margin-top: 30px;
+    }
+}
+
+@media (min-height: 565px) {
+    .img-main-logo {
+        margin-top: 30px;
+    }
+}
+
+.img-alpahbet-logo {
+    width: 212px;
+    height: 53px;
+}
+
+@media (min-width: 1024px) {
+    .img-alpahbet-logo {
+        width: 326px;
+        height: 80px;
+    }
+}
+
+.sec1 {
+    height: 10vh;
+    text-align: center;
+}
+
+.sec2 {
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 566px) and (max-width: 1023px) {
+    .sec2 {
+        text-align: left;
+    }
+}
+
+.sec2 .img-spin {
+    display: none;
+}
+
+@media screen and (max-width: 565px) {
+    .sec2 .img-spin {
+        display: block;
+    }
+}
+
+.img-spin {
+    width: 100%;
+}
+
+.btn-go-library {
+    position: relative;
+}
+
+@media screen and (max-width: 565px) {
+    .btn-go-library {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn-go-library {
+        position: relative;
+    }
+}
+
+.img-go-library {
+    width: 160px;
+}
+
+@media (max-width: 565px) and (max-width: 1023px) {
+    .img-go-library {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-go-library {
+        width: 220px;
+    }
+}
+
+.btn-go-library a {
+    position: absolute;
+    left: -40px;
+    top: 0px;
+}
+
+@media (min-width: 1024px) {
+    .btn-go-library a {
+        position: absolute;
+        left: -40px;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .btn-go-back {
+        display: none;
+    }
+}
+
+.img-go-back {
+    width: 40px;
+}
+
+@media (max-width: 565px) and (max-width: 1023px) {
+    .img-go-back {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-go-back {
+        width: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dodo-category {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .dodo-category {
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-width: 1023px) {
+    .dodo-category {
+        width: 100%;
+    }
+}
+
+@media (min-width: 566px) and (max-width: 1023px) {
+    .dodo-category .large {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dodo-category .large {
+        display: contents;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dodo-category .basic {
+        display: none;
+    }
+}
+
+.menu-dodo-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.img-menu-game {
+    height: 160px;
+    margin-right: 15px;
+}
+
+.img-menu-song {
+    height: 198px;
+    margin-left: 0px;
+}
+
+.img-menu-alphabet {
+    width: 280px;
+}
+
+.img-menu-phonics1 {
+    width: 280px;
+}
+
+.img-menu-phonics2 {
+    width: 280px;
+}
+
+.img-menu-sight-words {
+    width: 280px;
+}
+
+.menu-song_n_chant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:566px) and (max-width: 1023px) {
+    .dodo-category .basic {
+        display: flex;
+        overflow: scroll;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.resource-menu {
+    background-color: red;
+    height: 50px;
+    width: 48px;
+}
+
+@media (max-width: 565px) {
+    .resource-menu {
+        display: none;
+    }
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 0px 40px;
+}
+
+@media (max-width: 565px) {
+    .top-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 566px) and (max-width: 1023px) {
+    .top-menu {
+        padding: 20px 25px 0px 25px;
+    }
+}
+
+.dodo-contents-list {
+    width: 100%;
+}
+
+@media (max-width: 566px) {
+    .dodo-contents-list {
+        display: none;
+    }
+}
+
+.dodo-contents-list .basic {
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.dodo-alphabet-card {
+    width: 300px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #faaf17;
+    display: inline-block;
+    text-align: center;
+}
+
+.dodo-alphabet-card.completed {
+    background-color: #f98e20;
+}
+
+.dodo-alphabet-card div {
+    margin-bottom: 20px;
+}
+
+.alphabet-contents-title {
+    font-size: 2.6em;
+    letter-spacing: -0.28px;
+    color: #462203;
+}
+
+.alphabet-contents-title span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.6em;
+}
+
+.btn-go {
+    width: 100%;
+    background-color: #e6730c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.img-alphabet-content {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn-vocabulary {
+    color: #ffffff;
+    background-color:#e6730c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+.btn-worksheet {
+    color: #ffffff;
+    background-color:#e6730c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+.btn-vocabulary-group {
+    display: flex;
+}
+
+.dodo-pass-mark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-check {
+    width: 26px;
+    margin: 0 3px;
+}
+
+.btn-tab {
+    color: #e9e9e9;
+    background-color: #86ad8f;
+    border-radius: 15px;
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-tab.active {
+    color: #ffffff;
+    background-color: #28a745;
+    border-radius: 15px;
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
