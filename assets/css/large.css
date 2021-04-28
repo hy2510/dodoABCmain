@@ -1,5 +1,4 @@
 /* 세로 */
-
 .portrait {
     display: none;
 }
@@ -16,7 +15,6 @@
 }
 
 /* 가로 */
-
 .main {
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +22,6 @@
 }
 
 /* 화면별 배경 */
-
 .main.dodo-abc {
     background-image: url("../image/main/main_bg.jpg");
 }
@@ -49,8 +46,35 @@
     background-image: url('../image/main_song/song_bg.png');
 }
 
-/* 화면별 배경 끝 */
+.main.song01 {
+    background-image: url('../image/main_song/song01/song-1-0_bg.png');
+}
 
+.main.song02 {
+    background-image: url('../image/main_song/song02/song-2-0_bg.png');
+}
+
+.main.song03 {
+    background-image: url('../image/main_song/song03/song-3-0_bg.png');
+}
+
+.main.game {
+    background-image: url('../image/main_game/page_bg.png');
+}
+
+.main.game01 {
+    background-image: url('../image/main_game/game01/1-0_bg.png');
+}
+
+.main.game02 {
+    background-image: url('../image/main_game/game02/2-0_bg.png');
+}
+
+.main.game03 {
+    background-image: url('../image/main_game/game03/3-0_bg.png');
+}
+
+/* 화면별 배경 끝 */
 .sec1 .common-top {
     display: flex;
     justify-content: space-between;
@@ -158,6 +182,7 @@
 }
 
 .card-a .pass-mark {
+    display: flex;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -169,6 +194,7 @@
 
 .icon-check {
     width: 20px;
+    height: 20px;
 }
 
 .alphabet-cover {
@@ -293,7 +319,7 @@
 }
 
 .sec1 .dodo-abc-top {
-    position: relative;
+    position: static;
 }
 
 .sec1 .dodo-abc-top .go-library {
@@ -367,7 +393,7 @@
     transform: translate(-50%);
 }
 
-.basic-menu > div {
+.basic-menu>div {
     position: relative;
 }
 
@@ -427,9 +453,11 @@
     .img-song-nursery {
         width: 280px;
     }
+
     .img-song-alphabet {
         width: 280px;
     }
+
     .img-song-phonics {
         width: 280px;
     }
@@ -474,7 +502,7 @@
     border-radius: 15px;
     margin: 0px 5px 0px 5px;
     display: grid;
-    grid: auto / 1fr 2fr
+    grid: auto / 1fr 2fr;
 }
 
 .img-cover {
@@ -506,7 +534,7 @@
 }
 
 .contents .function .resource button {
-    background-color: rgba(230,115,12,0.5) !important;
+    background-color: rgba(230, 115, 12, 0.5) !important;
 }
 
 .contents .function .resource {
@@ -517,4 +545,265 @@
     margin-right: 6px;
 }
 
-/* 여기까지 작업함(20210425) */
+/* 20210428 이후 */
+
+.img-song01-logo {
+    width: 500px;
+}
+
+.sec1 .common-top .logo-song-sub {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.start-song {
+    width: 100%;
+    height: 120px;
+}
+
+.song01-cover {
+    width: 100%;
+    min-width: 320px;
+    border-radius: 15px;
+}
+
+.card-song-a {
+    width: 360px;
+    background-color: #ffa9c5;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.card-song-a.completed {
+    background-color: #ff75a2;
+}
+
+.card-song-a .cover {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.card-song-a .pass-mark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-song-go {
+    width: 100%;
+    height: 100%;
+    padding: 8px 5px 8px 5px;
+    border-radius: 15px;
+    background-color: rgba(200, 15, 74, 0.3);
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+.icon-song-check {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.img-song02-logo {
+    width: 500px;
+}
+
+.song02-cover {
+    width: 100%;
+    min-width: 320px;
+    border-radius: 15px;
+}
+
+.img-song02-logo {
+    width: 500px;
+}
+
+.song03-cover {
+    width: 100%;
+    min-width: 320px;
+    border-radius: 15px;
+}
+
+.sec1 .common-top .logo-song-sub-2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sec1 .common-top .logo-song-sub-3 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-game-alphabet {
+    width: 330px;
+    margin-bottom: 100px;
+}
+
+.img-game-phonics {
+    width: 330px;
+}
+
+.img-game-sight-words {
+    width: 330px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-height: 600px) {
+    .img-game-alphabet {
+        width: 280px;
+    }
+
+    .img-game-phonics {
+        width: 280px;
+    }
+
+    .img-game-sight-words {
+        width: 280px;
+    }
+}
+
+.card-song-a .pass-mark {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.item-list .items-game {
+    display: grid;
+    grid: auto / 20% 20% 20% 20% 20%;
+    margin: 0px 20px 50px 20px;
+}
+
+.img-game01-logo {
+    width: 460px;
+}
+
+.sec1 .common-top .logo-game01-sub {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-height: 600px) {
+    .img-game01-logo {
+        width: 380px;
+    }
+    .sec1 .common-top .logo-game01-sub {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.items .item-game01 {
+    height: 250px;
+}
+
+.img-item-game01 {
+    width: 90%;
+    padding: 0px 10px;
+}
+
+@media (min-width: 1366px) {
+    .img-item-game01 {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+.icon-game-star {
+    width: 34px;
+    height: 34px;
+}
+
+/* 여기까지 */
+
+.img-game02-logo {
+    width: 460px;
+}
+
+.sec1 .common-top .logo-game02-sub {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-height: 600px) {
+    .img-game02-logo {
+        width: 380px;
+    }
+    .sec1 .common-top .logo-game02-sub {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.items .item-game02 {
+    height: 250px;
+}
+
+.img-item-game02 {
+    width: 90%;
+    padding: 0px 10px;
+}
+
+@media (min-width: 1366px) {
+    .img-item-game02 {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+/* 여기까지 */
+
+.img-game03-logo {
+    width: 460px;
+}
+
+.sec1 .common-top .logo-game03-sub {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-height: 600px) {
+    .img-game03-logo {
+        width: 380px;
+    }
+    .sec1 .common-top .logo-game03-sub {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.items .item-game03 {
+    height: 250px;
+}
+
+.img-item-game03 {
+    width: 90%;
+    padding: 0px 10px;
+}
+
+@media (min-width: 1366px) {
+    .img-item-game03 {
+        width: 80%;
+        padding: 10px;
+    }
+}

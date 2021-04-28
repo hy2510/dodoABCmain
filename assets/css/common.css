@@ -34,3 +34,9 @@ body {
         width: 70%;
     }
 }
+
+/* 2021-04-27 */
+
+.btn:hover {
+    color: yellow !important;
+}
