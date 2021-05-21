@@ -27,11 +27,11 @@
 }
 
 .main.alphabet {
-    background-image: url('../image/main_alphabet/page_bg.png');
+    background-image: url('../image/main_alphabet/page_bg_1024x768.png');
 }
 
 .main.phonics1 {
-    background-image: url('../image/main_phonics1/board_bg.png');
+    background-image: url('../image/main_phonics1/board_bg_1024x768.png');
 }
 
 .main.phonics2 {
@@ -39,7 +39,7 @@
 }
 
 .main.sight-words {
-    background-image: url('../image/main_sight_words/board_bg.png');
+    background-image: url('../image/main_sight_words/board_bg_1024x768.png');
 }
 
 .main.song-n-chant {
@@ -51,11 +51,11 @@
 }
 
 .main.song02 {
-    background-image: url('../image/main_song/song02/song-2-0_bg.png');
+    background-image: url('../image/main_song/song02/alphabet_bg_1024x768.png');
 }
 
 .main.song03 {
-    background-image: url('../image/main_song/song03/song-3-0_bg.png');
+    background-image: url('../image/main_song/song03/phonics_bg_1024x768.png');
 }
 
 .main.game {
@@ -72,6 +72,28 @@
 
 .main.game03 {
     background-image: url('../image/main_game/game03/3-0_bg.png');
+}
+
+@media screen and (max-height: 600px) {
+    .main.alphabet {
+        background-image: url('../image/main_alphabet/page_bg_960x600.png');
+    }
+
+    .main.phonics1 {
+        background-image: url('../image/main_phonics1/board_bg_960x600.png');
+    }
+
+    .main.sight-words {
+        background-image: url('../image/main_sight_words/board_bg_960x600.png');
+    }
+
+    .main.song02 {
+        background-image: url('../image/main_song/song02/alphabet_bg_960x600.png');
+    }
+
+    .main.song03 {
+        background-image: url('../image/main_song/song03/phonics_bg_1024x768.png');
+    }
 }
 
 /* 화면별 배경 끝 */
@@ -697,6 +719,7 @@
     .img-game01-logo {
         width: 380px;
     }
+
     .sec1 .common-top .logo-game01-sub {
         position: absolute;
         top: 40px;
@@ -743,6 +766,7 @@
     .img-game02-logo {
         width: 380px;
     }
+
     .sec1 .common-top .logo-game02-sub {
         position: absolute;
         top: 30px;
@@ -784,6 +808,7 @@
     .img-game03-logo {
         width: 380px;
     }
+
     .sec1 .common-top .logo-game03-sub {
         position: absolute;
         top: 30px;

@@ -27,11 +27,11 @@
 }
 
 .main.alphabet {
-    background-image: url('../image/main_alphabet/page_bg.png');
+    background-image: url('../image/main_alphabet/page_bg_667x375.png');
 }
 
 .main.phonics1 {
-    background-image: url('../image/main_phonics1/board_bg.png');
+    background-image: url('../image/main_phonics1/board_bg_667x375.png');
 }
 
 .main.phonics2 {
@@ -39,7 +39,7 @@
 }
 
 .main.sight-words {
-    background-image: url('../image/main_sight_words/board_bg.png');
+    background-image: url('../image/main_sight_words/board_bg_667x375.png');
 }
 
 .main.song-n-chant {
@@ -51,11 +51,11 @@
 }
 
 .main.song02 {
-    background-image: url('../image/main_song/song02/song-2-0_bg.png');
+    background-image: url('../image/main_song/song02/alphabet_bg_667x375.png');
 }
 
 .main.song03 {
-    background-image: url('../image/main_song/song03/song-3-0_bg.png');
+    background-image: url('../image/main_song/song03/phonics_bg_667x375.png');
 }
 
 .main.game {
