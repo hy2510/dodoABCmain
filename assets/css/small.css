@@ -12,6 +12,7 @@
     height: 90vh;
     display: flex;
     align-items: center;
+    overflow-x: auto;
 }
 
 /* 가로 */
@@ -735,9 +736,9 @@
 }
 
 .item-list .items-game {
-    display: grid;
-    grid: auto / 20% 20% 20% 20% 20%;
+    display: flex;
     margin: 0px 20px 0px 20px;
+    overflow-x: scroll;
 }
 
 .img-game01-logo {
@@ -768,7 +769,7 @@
 }
 
 .img-item-game01 {
-    width: 100%;
+    width: 150px;
     padding: 0px 10px;
 }
 
@@ -805,7 +806,7 @@
 }
 
 .img-item-game02 {
-    width: 100%;
+    width: 150px;
     padding: 0px 10px;
 }
 
@@ -837,6 +838,12 @@
 }
 
 .img-item-game03 {
-    width: 100%;
+    width: 150px;
     padding: 0px 10px;
+}
+
+@media screen and (max-width: 2000px) {
+    #tabletPC {
+        display: none;
+    }
 }
