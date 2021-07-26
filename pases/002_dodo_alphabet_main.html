@@ -35,25 +35,57 @@
 				<div class="logo">
 					<img src="../assets/image/main_alphabet/title.png" alt="" class="img-alpahbet-logo">
 				</div>
-				<div class="menu dropdown">
-					<button id="dropdownMenuLink1" class="btn btn-hbg-menu" role="button" data-toggle="dropdown"><img
-							src="../assets/image/common/img_hbg_menu.png"
-							srcset="../assets/image/common/img_hbg_menu@2x.png 2x, ../assets/image/common/img_hbg_menu@3x.png 3x"
-							alt="" class="img-hbg-menu"></button>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink1">
-						<button class="intro" type="button"><img src="../assets/image/common/ico_tri.png" alt=""
-								class="icon-play"><span>Intro</span></button>
-						<button class="ending" type="button"><img src="../assets/image/common/ico_tri.png" alt=""
-								class="icon-play"><span>Ending</span></button>
-						<button class="wb-mp3" type="button"><img src="../assets/image/common/ico_mp3.png" alt=""
-								class="icon-wp-mp3"><span>WS MP3</span></button>
-						<div class="dropdown-filter">
-							<div class="label">Filter</div>
-							<button class="btn btn-tab active">All</button>
-							<button class="btn btn-tab">Passed</button>
+
+				<!-- 오른쪽 버튼 그룹 -->
+				<div class="d-flex align-items-center">
+
+					<!-- 물음표 버튼 -->
+					<div>
+						<button class="btn" data-toggle="modal" data-target="#guide"><img
+								src="../assets/image/common/question-mark_80.png" alt="" width="30"></button>
+					</div>
+
+					<!-- 안내 영상 팝업 -->
+					<div id="guide" class="modal fade" data-backdrop="static">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="d-flex">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe id="video" class="embed-responsive-item"
+											src="https://wcfresource.a1edu.com/newsystem/moviebook/dodoabc/guide_alphabet.mp4"
+											allowfullscreen></iframe>
+									</div>
+									<div class="position-absolute" style="right: -50px; top: -7px;">
+										<button class="btn" data-dismiss="modal"><img src="../assets/image/common/icn_delete_white.png" alt=""></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- 메뉴 팝업 버튼 -->
+					<div class="menu dropdown">
+						<button id="dropdownMenuLink1" class="btn btn-hbg-menu" role="button"
+							data-toggle="dropdown"><img src="../assets/image/common/img_hbg_menu.png"
+								srcset="../assets/image/common/img_hbg_menu@2x.png 2x, ../assets/image/common/img_hbg_menu@3x.png 3x"
+								alt="" class="img-hbg-menu"></button>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink1">
+							<button class="intro" type="button"><img src="../assets/image/common/ico_tri.png" alt=""
+									class="icon-play"><span>Intro</span></button>
+							<button class="ending" type="button"><img src="../assets/image/common/ico_tri.png" alt=""
+									class="icon-play"><span>Ending</span></button>
+							<button class="wb-mp3" type="button"><img src="../assets/image/common/ico_mp3.png" alt=""
+									class="icon-wp-mp3"><span>WS MP3</span></button>
+							<div class="dropdown-filter">
+								<div class="label">Filter</div>
+								<button class="btn btn-tab active">All</button>
+								<button class="btn btn-tab">Passed</button>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<!-- Section2 -->
@@ -82,7 +114,7 @@
 							<button type="button" class="btn btn-go" data-toggle="modal" data-target="#bookInfo"><img
 									src="../assets/image/common/icn_go.png" alt="" class="icon-go"></button>
 						</div>
-						<div class="resource">
+						<div class="resource d-none">
 							<button class="btn btn-vocabulary">Vocabulary</button>
 							<button class="btn btn-worksheet">Worksheet</button>
 						</div>
@@ -102,7 +134,7 @@
 							<button class="btn btn-go"><img src="../assets/image/common/icn_go.png" alt=""
 									class="icon-go"></button>
 						</div>
-						<div class="resource">
+						<div class="resource d-none">
 							<button class="btn btn-vocabulary">Vocabulary</button>
 							<button class="btn btn-worksheet">Worksheet</button>
 						</div>
@@ -274,12 +306,12 @@
 										</div>
 										<div class="round">EB-PK-001</div>
 									</div>
-									<div class="function">
+									<div class="function w-75">
 										<div class="go">
 											<button class="btn btn-go"><img src="../assets/image/common/icn_go.png"
 													alt="" class="icon-go"></button>
 										</div>
-										<div class="resource">
+										<div class="resource d-none">
 											<button class="btn btn-vocabulary w-100">Vocabulary</button>
 											<button class="btn btn-worksheet w-100">Worksheet</button>
 										</div>
