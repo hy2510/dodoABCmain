@@ -145,6 +145,12 @@
     margin-bottom: 30px;
 }
 
+@media screen and (max-height: 599px) {
+    .item-list .filter {
+        display: none;
+    }  
+}
+
 .btn-tab {
     width: 150px;
     color: rgba(255, 255, 255, 0.5);
@@ -152,6 +158,21 @@
     background-color: #80a599;
     border-radius: 15px;
     margin: 0px 5px 0px 5px;
+}
+
+@media screen and (max-height: 599px) {
+    .btn-tab {
+        width: 100%;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1em;
+        text-align: left;
+        background-color: #80a599;
+        border-radius: 10px;
+        margin: 0px 0px 15px 0px;
+    }
+    .btn-tab:nth-last-child(1) {
+        margin: 0px 0px 0px 0px;
+    }
 }
 
 .btn-tab.active {
@@ -339,8 +360,16 @@
     width: 40px;
 }
 
-.dropdown-filter {
-    display: none;
+@media (min-height: 600px) {
+    .dropdown-filter {
+        display: none;
+    }
+}
+
+.dropdown-filter .label {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sec1 .dodo-abc-top {
